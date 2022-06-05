@@ -33,12 +33,14 @@ namespace Business.Concrete
             return new SuccessResult(Messages.ProductAdded);
         }
 
+        
+          
         public IDataResult<List<Product>> GetAll()
         {
             //İş Kodları ifler
             //Yetkisi var mı ?
 
-            if (DateTime.Now.Hour==22)
+            if (DateTime.Now.Hour==23)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
