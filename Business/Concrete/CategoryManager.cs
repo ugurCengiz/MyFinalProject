@@ -20,7 +20,6 @@ namespace Business.Concrete
 
         public IDataResult< List<Category>> GetAll()
         {
-            //İş Kodları
             return new SuccessDataResult<List<Category>>( _categoryDal.GetAll());
         }
 
